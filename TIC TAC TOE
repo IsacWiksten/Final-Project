@@ -1,15 +1,16 @@
-import os 
+ import os 
 import time
 import numpy as np
 
 platser = [' ', ' ', ' ', ' ', ' ', ' ', ' ',' ',' ',' ']
 
 def Brädet():
-    print(" %c | %c | %c " % (platser[1], platser[2], platser [3]))
-    print(" __ | __ | __")
-    print(" %c | %c | %c " % (platser[4], platser[5], platser [6]))
-    print(" __ | __ | __ ")
-    print(" %c | %c | %c " % (platser[7], platser[8], platser[9]))
-    print("    |    |    ")
+    print(" %c   | %c  | %c " % (platser[1], platser[2], platser [3]))
+    print(" ____|____|____")
+    print(" %c   | %c  | %c " % (platser[4], platser[5], platser [6]))
+    print(" ____|____|____ ")
+    print(" %c   | %c  | %c " % (platser[7], platser[8], platser[9]))
+    print("     |    |    ")
 
 print (Brädet())
+          
