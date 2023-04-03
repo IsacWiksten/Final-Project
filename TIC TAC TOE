@@ -12,5 +12,14 @@ def Brädet():
     print(" %c   | %c  | %c " % (platser[7], platser[8], platser[9]))
     print("     |    |    ")
 
+spelare1 = "O"
+spelare2 = "X"
+
+for i in range(0, 2): 
+    if i%2 == 0:
+        print("spelare 1's tur")
+    else: print("spelare 2's tur")
+
 print (Brädet())
           
+        
