@@ -20,5 +20,10 @@ for i in range(0, 2):
         print("spelare 1's tur")
     else: print("spelare 2's tur")
 
+print("Vart vill du lägga? Välj en plats 1-9")
+x = input()
+if x = 1
+print("Hejsan")   #Testar en sak
+
 print (Brädet())
           
