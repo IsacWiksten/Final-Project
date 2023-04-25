@@ -12,6 +12,8 @@ def Brädet():
     print(" %c   | %c  | %c " % (platser[7], platser[8], platser[9]))
     print("     |    |    ")
 
+print (Brädet())
+
 spelare1 = "O"
 spelare2 = "X"
 
@@ -22,8 +24,10 @@ for i in range(0, 2):
 
 print("Vart vill du lägga? Välj en plats 1-9")
 x = input()
-if x = 1
-print("Hejsan")   #Testar en sak
+if x == 1-9:
+    print("BRA")                    #Testar en sak
+    
 
-print (Brädet())
+
           
+    
