@@ -23,8 +23,8 @@ for i in range(0, 2):
     else: print("spelare 2's tur")
 
 print("Vart vill du lägga? Välj en plats 1-9")
-x = input()
-if x == 1-9:
+x = int(input())
+if x < 9 and x > 0:
     print("BRA")                    #Testar en sak
     
 
