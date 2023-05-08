@@ -17,15 +17,77 @@ print (Brädet())
 spelare1 = "O"
 spelare2 = "X"
 
-for i in range(0, 2): 
-    if i%2 == 0:
-        print("spelare 1's tur")
-    else: print("spelare 2's tur")
+                    #for i in range(0, 2): 
+                        #if i%2 == 0:
+                        #print("spelare 1's tur")
+                            #else: print("spelare 2's tur")
+
+
 
 print("Vart vill du lägga? Välj en plats 1-9")
 x = int(input())
-if x < 9 and x > 0:
-    print("BRA")                    #Testar en sak
+
+def check(index: int, marker: str):
+    for i in range(len(platser)):
+        if index == i:
+            platser[i] = marker
+
+i = 0            
+while True:
+    if i % 2 == 0:
+        # spelare 1's tur
+        pass
+    else:
+        # spelare tvås tur
+    brädet()
+    i += 1
+"""
+if x == 1:
+    platser[1] = "O"
+if x == 2:
+    platser[2] = "O"
+if x == 3:
+    platser[3] = "O"
+if x == 4:
+    platser[4] = "O"
+if x == 5:
+    platser[5] = "O"
+if x == 6:
+    platser[6] = "O"
+if x == 7:
+    platser[7] = "O"
+if x == 8:
+    platser[8] = "O"
+if x == 9:
+    platser[9] = "O"
+"""
+print (Brädet())
+"""
+print("Spelare 2's tur, vart vill du lägga?")
+x = int(input())
+if x == 1:
+    platser[1] = "X"
+if x == 2:
+    platser[2] = "X"
+if x == 3:
+    platser[3] = "X"
+if x == 4:
+    platser[4] = "X"
+if x == 5:
+    platser[5] = "X"
+if x == 6:
+    platser[6] = "X"
+if x == 7:
+    platser[7] = "X"
+if x == 8:
+    platser[8] = "X"
+if x == 9:
+    platser[9] = "X"
+
+print (Brädet())
+"""
+
+
     
 
 
