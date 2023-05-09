@@ -12,8 +12,7 @@ def Brädet():
     print(" %c   | %c  | %c " % (platser[7], platser[8], platser[9]))
     print("     |    |    ")
 
-print (Brädet())
-
+print(Brädet())
 spelare1 = "O"
 spelare2 = "X"
 
@@ -25,21 +24,47 @@ spelare2 = "X"
 
 
 print("Vart vill du lägga? Välj en plats 1-9")
-x = int(input())
 
 def check(index: int, marker: str):
     for i in range(len(platser)):
         if index == i:
-            platser[i] = marker
+            platser[index] = marker
+
+list1 = ["X", "X", "O", "X", "X", "O", "X", "O", "O"]
+def checkwin(lista):
+    lista = np.array(lista)
+    
+    if np.all(lista[0:3] == "X") or np.all(lista[0:3] == "O"):
+        print("Du vann")
+    if np.all(lista[3:6] == "X") or np.all(lista[3:6] == "O"):
+        print("Du vann")
+    if np.all(lista[6:9] == "X") or np.all(lista[6:9] == "O"):
+        print("Du vann")
+    if np.all(np.array([lista[0], lista[3], lista[6]]) == "X") or np.all(np.array([lista[0], lista[3], lista[6]]) == "O"):
+        print ("Du vann")
+    if np.all(np.array([lista[1], lista[4], lista[7]]) == "X") or np.all(np.array([lista[1], lista[4], lista[7]]) == "O"):
+        print ("Du vann")
+    if np.all(np.array([lista[2], lista[5], lista[8]]) == "X") or np.all(np.array([lista[2], lista[5], lista[8]]) == "O"):
+        print ("Du vann")
+    if np.all(np.array([lista[0], lista[4], lista[8]]) == "X") or np.all(np.array([lista[0], lista[4], lista[8]]) == "O"):
+        print ("Du vann")
+    if np.all(np.array([lista[6], lista[4], lista[2]]) == "X") or np.all(np.array([lista[6], lista[4], lista[2]]) == "O"):
+        print ("Du vann")
+
+checkwin(list1)
+    
 
 i = 0            
 while True:
+    checkwin(list1)
     if i % 2 == 0:
-        # spelare 1's tur
+        print("spelare 1's tur")
+        check(int(input("Ett nummer")), "X")
         pass
     else:
-        # spelare tvås tur
-    brädet()
+        print("spelare 2's tur")
+        check(int(input("Ett nummer")), "O")
+    Brädet()
     i += 1
 """
 if x == 1:
@@ -61,7 +86,6 @@ if x == 8:
 if x == 9:
     platser[9] = "O"
 """
-print (Brädet())
 """
 print("Spelare 2's tur, vart vill du lägga?")
 x = int(input())
